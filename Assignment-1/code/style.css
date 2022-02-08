@@ -1,1 +1,48 @@
+#container{
+    width:auto;
+    height:auto;
+}
+.row{
+    display:block;
+    width:auto;
+}
+.blue,.orange,.red{
+    display:flex;
+}
+.orange .content{
+    height:100px;
+    background-color: orange;
+    margin:20px;
+}
+.red .content{
+    height:100px;
+    background-color: rgb(250,150,80);
+    margin:20px;
+}
+.blue .content{
+    height: 100px;
+    background-color: rgb(180,190,255);
+    margin:20px;
+}
 
+/*.........min width..1024px.........*/
+@media screen and (min-device-width:1024px){
+    .red .content,.orange .content,.blue .content{
+        flex:1 1 auto;
+    }
+}
+/*.........min width..768px.........*/
+@media screen and (min-device-width:768px) and (max-device-width:1023px){
+    .red .content,.orange .content{
+        flex:1 1 auto;
+    }
+    .blue{
+        flex-direction: column;
+    }   
+}
+/*.........min width..320px.........*/
+@media screen and (min-device-width:320px) and (max-device-width:767px){
+    .red,.orange,.blue{
+        flex-direction: column;
+    }
+}
