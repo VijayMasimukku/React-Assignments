@@ -38,6 +38,7 @@ function App() {
           <p><b>Email :</b>{appointments.email}</p>
           <p><b>Phone :</b>{appointments.phone}</p>
           </div>
+          
         </div>
         <div className='rows'>
         <div className='order-info'>
