@@ -42,8 +42,7 @@ const Postview = () => {
                     <div className="more-icon"><img className="moreIcon" src={OptionsIcon} alt='options-icon'></img></div>
                 </div>
                 <div className='post-img'>
-                    <img src={Image} width='500' height='4
-                    00'alt='user posted img'></img>
+                    <img src={Image} width='500' height='400'alt='user posted img'></img>
                 </div>
                 <div className='post-info'>
                     <div className="icons"><img className='heart-icon'src={HeartIcon} alt='heartIcon'></img>
